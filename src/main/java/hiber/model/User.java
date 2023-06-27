@@ -20,6 +20,8 @@ public class User {
    private String email;
 
    public User() {}
+   @OneToOne
+   Car car;
    
    public User(String firstName, String lastName, String email) {
       this.firstName = firstName;
